@@ -12,8 +12,8 @@ _TODO: Fill out the information below._
 
 The following machines were identified on the network:
 - Name of VM 1
-  - **Debian Kali 5.4.0**:
-  - **Purpose**:
+  - **Operating System**: Debian Kali 5.4.0
+  - **Purpose**: 
   - **IP Address**:
 - Name of VM 2
   - **Operating System**:
