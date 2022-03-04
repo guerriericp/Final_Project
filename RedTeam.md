@@ -57,4 +57,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - `ssh michael@192.168.1.110`
       - `pwd: michael`
       - `cd ../../`
-      - `cd var/www/html`
+      - `cd var/www`
+      - `ls -l`
+      - `cat flag2.txt`
+![flag 2](https://github.com/guerriericp/Final_Project/blob/main/Images/flag_2redteam.png "Flag 2")
