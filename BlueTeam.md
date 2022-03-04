@@ -40,14 +40,13 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
 #### Name of CPU Usage Monitor
-_TODO: Replace `Alert 1` with the name of the alert._
 
 Alert 1 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
-
+  - **Metric**: WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
+  - **Threshold**: IS ABOVE 0.5
+  - **Vulnerability Mitigated**: Programs taking up an excessive amount of resources, Malicious software
+  - **Reliability**: This alert is highly reliable. It might give a couple false positives but overall it will help with CPU usage even if there isn't a malicious software running.
+![CPU Usage Monitor alert logs](/Images/"CPU usage blue team" "CPU Usage Monitor alert logs")
 #### Name of Alert 2
 Alert 2 is implemented as follows:
   - **Metric**: TODO
