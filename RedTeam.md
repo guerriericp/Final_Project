@@ -16,11 +16,11 @@ $ nmap -sV 192.168.1.110
 
 This scan identifies the services below as potential points of entry:
 - Target 1
-  1. Port 22/TCP 	    Open 	SSH
-  2. Port 80/TCP 	    Open 	HTTP
-  3. Port 111/TCP 	Open 	rcpbind
-  4. Port 139/TCP 	Open 	netbios-ssn
-  5. Port 445/TCP 	Open 	netbios-ssn
+ 1. Port 22/TCP 	    Open 	SSH
+ 2. Port 80/TCP 	    Open 	HTTP
+ 3. Port 111/TCP 	Open 	rcpbind
+ 4. Port 139/TCP 	Open 	netbios-ssn
+ 5. Port 445/TCP 	Open 	netbios-ssn
 
 
 The following vulnerabilities were identified on each target:
