@@ -60,4 +60,5 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - `cd var/www`
       - `ls -l`
       - `cat flag2.txt`
+     
 ![flag 2](https://github.com/guerriericp/Final_Project/blob/main/Images/flag_2redteam.png "Flag 2")
