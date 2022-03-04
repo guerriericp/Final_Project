@@ -37,6 +37,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
       - WPScan to enumerate users of the targeted WordPress site
       - `$ wpscan --url http://192.168.1.110 --enumerate u`
+    - User 'Michael' is our target
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
