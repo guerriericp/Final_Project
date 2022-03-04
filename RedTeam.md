@@ -25,9 +25,9 @@ This scan identifies the services below as potential points of entry:
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  1. User Enumeration
-  2. Weak user password
-  3. Misconfiguration of User Priviledges 
+ 1. User Enumeration
+ 2. Weak user password
+ 3. Misconfiguration of User Priviledges 
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
