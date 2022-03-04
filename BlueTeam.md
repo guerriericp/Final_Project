@@ -46,7 +46,7 @@ Alert 1 is implemented as follows:
   - **Threshold**: IS ABOVE 0.5
   - **Vulnerability Mitigated**: Programs taking up an excessive amount of resources, Malicious software
   - **Reliability**: This alert is highly reliable. It might give a couple false positives but overall it will help with CPU usage even if there isn't a malicious software running.
-![CPU Usage Monitor alert logs](/Images/"CPU usage blue team" "CPU Usage Monitor alert logs")
+![CPU Usage Monitor alert logs](Final_Project/Images/CPU_usage.JPG "CPU Usage Monitor alert logs")
 #### Name of Alert 2
 Alert 2 is implemented as follows:
   - **Metric**: TODO
