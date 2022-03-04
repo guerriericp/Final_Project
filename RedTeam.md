@@ -47,6 +47,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - `cd var/www/html`
       - `ls -l`
       - `grep -i 'flag1' service.html`
+     
 ![flag1](https://github.com/guerriericp/Final_Project/blob/main/Images/flag_1redteam.png "Flag 1")
  
  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
