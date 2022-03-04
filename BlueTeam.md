@@ -53,14 +53,14 @@ Alert 2 is implemented as follows:
   - **Threshold**: IS ABOVE 3500
   - **Vulnerability Mitigated**: Could potententially catch DDOS attacks and code injection.
   - **Reliability**: This is a medium reliability alert since it is possible to just have high HTTP traffic. 
-
+![HTTP Request size Monitor](https://github.com/guerriericp/Final_Project/blob/main/Images/HTTP_request_size_blue_team.png "HTTP Request Size Monitor logs")
 #### Name of Excessive HTTP Errors
 Alert 3 is implemented as follows:
   - **Metric**: WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes
   - **Threshold**: IS ABOVE 400
   - **Vulnerability Mitigated**: Enumeration and Brute Force.
   - **Reliability**: The Alert is highly reliable. It is tracking errors codes that goes beyond 400 and this filters out all the successful responses. If this errors codes are going off in a high amount something is for sure going on.
-
+![Excessive HTTP Errors](https://github.com/guerriericp/Final_Project/blob/main/Images/Excessive_HTTP_Errors.png "Excessive HTTP error logs")
 ### Suggestions for Going Further (Optional)
 _TODO_: 
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
