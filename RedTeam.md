@@ -14,6 +14,7 @@ $ nmap -sV 192.168.1.110
   # TODO: Insert scan output
 ```
 ![NMAP scan](https://github.com/guerriericp/Final_Project/blob/main/Images/nmap_scan_final_project.png "NMAP scan")
+
 This scan identifies the services below as potential points of entry:
 - Target 1
   - List of
