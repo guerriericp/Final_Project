@@ -30,14 +30,13 @@ The following vulnerabilities were identified on each target:
  3. Misconfiguration of User Priviledges 
 
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
+  - `flag1.txt`: b9bbcb33ellb80be759c4e844862482d
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - WPScan to enumerate users of the targeted WordPress site
+      - `$ wpscan --url http://192.168.1.110 --enumerate u`
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
