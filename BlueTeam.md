@@ -11,15 +11,22 @@
 _TODO: Fill out the information below._
 
 The following machines were identified on the network:
-- Name of VM 1
+- Kali
   - **Operating System**: Debian Kali 5.4.0
-  - **Purpose**: 
-  - **IP Address**:
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
+  - **Purpose**: The Attacking machine
+  - **IP Address**: 192.168.1.90
+- ELK
+  - **Operating System**: Ubuntu 18.04
+  - **Purpose**: Elastic search and kibana
+  - **IP Address**: 192.168.1.100
+- Target 1
+  - **Operating System**: Linux 8
+  - **Purpose**: The WordPRess Host
+  - **IP Address**: 192.168.1.110
+- Capstone
+  - **Operating System**: Ubuntu 18.04
+  - **Purpose**: The Vulnerable Web Server
+  - **IP Address**: 192.168.1.105
 
 ### Description of Targets
 _TODO: Answer the questions below._
