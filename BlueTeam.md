@@ -47,21 +47,19 @@ Alert 1 is implemented as follows:
   - **Vulnerability Mitigated**: Programs taking up an excessive amount of resources, Malicious software
   - **Reliability**: This alert is highly reliable. It might give a couple false positives but overall it will help with CPU usage even if there isn't a malicious software running.
 ![CPU Usage Monitor alert logs](https://github.com/guerriericp/Final_Project/blob/main/Images/CPU_usage.png "CPU Usage Monitor alert logs")
-#### Name of Alert 2
+#### Name of HTTP Request Size Monitor
 Alert 2 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Metric**: WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute
+  - **Threshold**: IS ABOVE 3500
+  - **Vulnerability Mitigated**: Could potententially catch DDOS attacks and code injection.
+  - **Reliability**: This is a medium reliability alert since it is possible to just have high HTTP traffic. 
 
-#### Name of Alert 3
+#### Name of Excessive HTTP Errors
 Alert 3 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
-
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
+  - **Metric**: WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes
+  - **Threshold**: IS ABOVE 400
+  - **Vulnerability Mitigated**: Enumeration and Brute Force.
+  - **Reliability**: The Alert is highly reliable. It is tracking errors codes that goes beyond 400 and this filters out all the successful responses. If this errors codes are going off in a high amount something is for sure going on.
 
 ### Suggestions for Going Further (Optional)
 _TODO_: 
